@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "exp/s3dis/pointtransformer_repro/train.py", line 21, in <module>
+    from util.s3dis import S3DIS
+  File "/data-2/wanghe/workspace/pt-n/util/s3dis.py", line 7, in <module>
+    from util.data_util import sa_create
+  File "/data-2/wanghe/workspace/pt-n/util/data_util.py", line 7, in <module>
+    from voxelize import voxelize
+ModuleNotFoundError: No module named 'voxelize'

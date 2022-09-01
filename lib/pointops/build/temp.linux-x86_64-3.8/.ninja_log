@@ -1,0 +1,14 @@
+# ninja log v5
+1	8222	1661503475709031207	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/sampling/sampling_cuda.o	d4cbb77b0f9ed99c
+4	8271	1661503475757031162	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/aggregation/aggregation_cuda.o	639708cf706c743d
+0	8371	1661503475861031065	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/knnquery/knnquery_cuda.o	40378f18c9931342
+2	9214	1661503476701030275	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/interpolation/interpolation_cuda.o	fc50b0f3ac410840
+2	9561	1661503477049029949	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/grouping/grouping_cuda.o	68bb1180d992e1a3
+3	9663	1661503477149029854	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/subtraction/subtraction_cuda.o	8f1a94d684fb28d5
+1	22132	1661503489609018089	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/sampling/sampling_cuda_kernel.o	3824795b93dacb28
+4	22711	1661503490193017535	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/aggregation/aggregation_cuda_kernel.o	fbe3b70fd254f447
+4	22890	1661503490365017372	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/subtraction/subtraction_cuda_kernel.o	83d8db48892ef79f
+1	22999	1661503490473017269	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/knnquery/knnquery_cuda_kernel.o	2cea626ba8f058b3
+2	23590	1661503491073016700	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/grouping/grouping_cuda_kernel.o	f1d03eb46b28707d
+3	24136	1661503491613016187	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/interpolation/interpolation_cuda_kernel.o	23456fcae28164c5
+0	26964	1661503494441013497	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-3.8/src/pointops_api.o	dcee3bb69e14719c

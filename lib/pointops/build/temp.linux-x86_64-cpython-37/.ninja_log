@@ -1,0 +1,14 @@
+# ninja log v5
+3	8441	1661925152668000417	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/sampling/sampling_cuda.o	13ed575051f46fde
+1	8782	1661925153003996213	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/grouping/grouping_cuda.o	36a7574d81c5bcaf
+3	8927	1661925153151994364	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/knnquery/knnquery_cuda.o	683c7581b0c82a5e
+2	8953	1661925153175994064	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/interpolation/interpolation_cuda.o	e913277b658c84c0
+4	9259	1661925153483990215	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/subtraction/subtraction_cuda.o	8ca56d6546ab2ede
+0	10031	1661925154255980574	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/aggregation/aggregation_cuda.o	57c88228076523f5
+4	22486	1661925166703826603	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/subtraction/subtraction_cuda_kernel.o	a908e47711ad0851
+1	22618	1661925166835824985	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/aggregation/aggregation_cuda_kernel.o	615a3a139fa0f1b4
+4	23019	1661925167235820084	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/sampling/sampling_cuda_kernel.o	8f0b82f0d54b9efb
+0	23113	1661925167331818908	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/knnquery/knnquery_cuda_kernel.o	fe060b4824357d2c
+2	23128	1661925167347818713	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/interpolation/interpolation_cuda_kernel.o	d3e5be6725c9c91
+1	24410	1661925168631803001	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/grouping/grouping_cuda_kernel.o	2328d7dd70f4a8b6
+3	27979	1661925172195759542	/data-2/wanghe/workspace/pt-n/lib/pointops/build/temp.linux-x86_64-cpython-37/src/pointops_api.o	9dda7aad1d0221b0
