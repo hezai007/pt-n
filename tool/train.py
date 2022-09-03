@@ -167,10 +167,10 @@ def main_worker(gpu, ngpus_per_node, argss):
     train_transform = t.Compose([t.RandomScale([0.9, 1.1]), t.ChromaticAutoContrast(), t.ChromaticTranslation(), t.ChromaticJitter(), t.HueSaturationTranslation()])
     train_data = S3DIS(split='train', data_root=args.data_root, test_area=args.test_area, voxel_size=args.voxel_size, voxel_max=args.voxel_max, transform=train_transform, shuffle_index=True, loop=args.loop)
     print('***********************************************************')
-    print(train_data)
+    
 
     if main_process():
-            logger.info("train_data samples: '{}'".format(len(train_data)))
+        logger.info("train_data samples: '{}'".format(len(train_data)))
     if args.distributed:
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_data)
     else:
@@ -243,6 +243,7 @@ def train(train_loader, model, criterion, optimizer, epoch):
         data_time.update(time.time() - end)
         coord, feat, target, offset = coord.cuda(non_blocking=True), feat.cuda(non_blocking=True), target.cuda(non_blocking=True), offset.cuda(non_blocking=True)
         output = model([coord, feat, offset])
+
         if target.shape[-1] == 1:
             target = target[:, 0]  # for cls
         loss = criterion(output, target)

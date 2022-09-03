@@ -13,9 +13,9 @@ TRAIN:
   use_xyz: True
   sync_bn: False
   ignore_label: 255
-  train_gpu: [3]
+  train_gpu: [4]
   workers: 16  # data loader workers
-  batch_size: 16  # batch size for training
+  batch_size: 4  # batch size for training
   batch_size_val: 4  # batch size for validation during training, memory and speed tradeoff
   base_lr: 0.5
   epochs: 100
@@ -44,7 +44,7 @@ TEST:
   test_list: dataset/s3dis/list/val5.txt
   test_list_full: dataset/s3dis/list/val5_full.txt
   split: val  # split in [train, val and test]
-  test_gpu: [0]
+  test_gpu: [4]
   test_workers: 4
   batch_size_test: 4
   model_path:

@@ -32,7 +32,7 @@ class SOUTH(Dataset):
     def __getitem__(self, idx):
         data_idx = self.data_idx[idx % len(self.data_idx)]
         data = SA.attach("shm://{}".format(self.data_list[data_idx])).copy()
-        coord, feat, label = data[:, 0:3], data[:, 3:6], data[:, -1]
+        coord, feat, label = data[:, 0:3], data[:, 3:6], data[:, -1]-6
         coord, feat, label = data_prepare(coord, feat, label, self.split, self.voxel_size, self.voxel_max, self.transform, self.shuffle_index)
         return coord, feat, label
 

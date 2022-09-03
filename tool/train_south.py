@@ -1,4 +1,6 @@
-import os
+import os, sys
+os.environ["OMP_NUM_THREADS"] = "1" # noqa
+os.environ["MKL_NUM_THREADS"] = "1" # noqa
 import time
 import random
 import numpy as np
@@ -17,6 +19,7 @@ import torch.distributed as dist
 import torch.optim.lr_scheduler as lr_scheduler
 from tensorboardX import SummaryWriter
 
+sys.path.append('/home/wanghe/workspace/pt-n')
 from util import config
 from util.south import SOUTH
 from util.common_util import AverageMeter, intersectionAndUnionGPU, find_free_port

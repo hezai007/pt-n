@@ -1,6 +1,6 @@
 DATA:
   data_name: south
-  data_root: dataset/south/trainval
+  data_root: dataset/south/trainval_fullarea
   test_area: 5    #
   classes: 3
   fea_dim: 6
@@ -13,12 +13,12 @@ TRAIN:
   use_xyz: True
   sync_bn: False
   ignore_label: 255
-  train_gpu: [0]
-  workers: 16  # data loader workers
-  batch_size: 8  # batch size for training
+  train_gpu: [4]
+  workers: 1  # data loader workers
+  batch_size: 4  # batch size for training
   batch_size_val: 4  # batch size for validation during training, memory and speed tradeoff
   base_lr: 0.5
-  epochs: 100
+  epochs: 150
   start_epoch: 0
   step_epoch: 30
   multiplier: 0.1
@@ -44,7 +44,7 @@ TEST:
   test_list: dataset/south/list/val.txt
   test_list_full: dataset/south/list/val_full.txt
   split: val  # split in [train, val and test]
-  test_gpu: [0]
+  test_gpu: [4]
   test_workers: 4
   batch_size_test: 4
   model_path:
